@@ -1,4 +1,4 @@
 resty-gwt.github.io
 ===================
 
-This is the web site git repository for restyGWT project.
+This is the git repository for restyGWT web site.
