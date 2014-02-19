@@ -1,3 +1,4 @@
 name: RestyGWT
 markdown: redcarpet
 pygments: true
+release_base: http://repo.fusesource.com/nexus/content/groups/public/org/fusesource/{{site.name}}/{{site.name}}
