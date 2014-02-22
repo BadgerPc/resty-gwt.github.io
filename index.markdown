@@ -4,8 +4,6 @@ title: RestyGWT
 slogan : Making Restful Services Accessible to GWT Applications
 ---
 
-Warning : This site is in "re-construction". Please visit [http://restygwt.fusesource.org/](http://restygwt.fusesource.org/)
-
 Description
 -----------
 

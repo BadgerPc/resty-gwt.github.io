@@ -85,10 +85,13 @@ img {
     font-size: 11pt; 
     margin-top: -5px;
     padding-left: 120px;
-    width: 350px;
+    width: 500px;
 }
 #overview div.message h1{ margin-bottom: 5px; display:none; }
-#overview div.message p{ margin-top: 0px; padding-bottom:14px; }
+#overview div.message p{ 
+  margin-top: 0px; 
+  /*padding-bottom:14px; */
+}
 
 #spot { width: 100%; float: left; 
     margin-top: 15px;
@@ -134,7 +137,13 @@ img {
 */
 
 #content { width: 100%; float: left; padding-bottom: 20px; }
-#content .wrapper { min-width: 700px; width: 700px; margin: 0 auto; padding-top: 1em}
+#content .wrapper { 
+  min-width: 700px; 
+  width: 700px; 
+  margin: 0 auto; 
+  /*padding-top: 1em*/
+}
+
 #content div.left {
   float:left;
   width:200px;

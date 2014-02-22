@@ -1,0 +1,1 @@
+<div class="bs-callout bs-callout-warning"><h4>Warning</h4> This site is in "re-construction". Please visit <a href="{{site.old_url}}">{{site.old_url}}</a> for the original web site</div>
