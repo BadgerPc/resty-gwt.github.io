@@ -22,6 +22,7 @@ REST Services
 
 RestyGWT Rest Services allow you to define an asynchronous Service interfaces which are 
 implemented by a RestyGWT generator.  See the following listing for an example:
+<br/><br/>
 
 {% highlight java %}
 import javax.ws.rs.POST;
@@ -48,6 +49,8 @@ The following example, will post  a JSON request and receive a JSON response.
 It will set the HTTP `Accept` and `Content-Type` and `X-HTTP-Method-Override` header t
 o the expected values.  It will also expect a HTTP 200 response code, otherwise it will 
 consider request the request a failure.
+<br/><br/>
+
 
 {% highlight java %}
 Resource resource = new Resource( GWT.getModuleBaseURL() + "pizza-service");
