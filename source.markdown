@@ -1,6 +1,6 @@
 ---
 layout: default
-title: RestyGWT
+title: RestyGWT / Source
 slogan : Get the latest source code
 ---
 
@@ -32,7 +32,7 @@ Now you probably want to try [build the {{site.project_name}} code](building.htm
 ## Contributing patches
 
 If you are not yet a committer but want to contribute some 
-patch (we love [contributions!](contributing.html)) here's 
+patch (we love [contributions!](/community/contributing.html)) here's 
 how you can submit patches
 <br/><br/>
 
