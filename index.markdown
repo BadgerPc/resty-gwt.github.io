@@ -85,4 +85,4 @@ external websites like yahoo and google.
 Getting started
 ---------------
 
-For more details, checkout the 
+For more details, checkout the [user guide](/documentation/index.html)
