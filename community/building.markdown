@@ -1,0 +1,72 @@
+---
+layout: default
+title: RestyGWT / Building
+slogan: The way most developers get started contributing to a project
+---
+
+## Building with Maven
+
+{{site.name}} uses [Maven](http://maven.apache.org/) as its primary
+build tool for performing releases and uses the pom.xml to describe
+dependencies between modules.
+
+### Prequisites
+
+*Required:*
+
+* Java 1.6
+* Download and [install Maven](http://maven.apache.org/download.html)
+* Get the latest [source](/source.html)
+
+### Maven options
+
+To build {{site.project_name}} maven has to be configured to use more memory
+
+    set MAVEN_OPTS=-Xmx512m -XX:MaxPermSize=128m
+
+### A normal build
+
+    mvn install -P run-its
+
+The last argument, **-P run-its**, is optional and is just used
+to run an extra set of integration tests.
+
+Once the build completes, you will find the {{site.name}} 
+binaries located in the `restygwt/target` directory.
+
+
+### Doing a Quick Build
+
+The following avoids running all the unit test cases, we just skip the
+test running phase and not the building part
+
+    mvn -Dtest=false clean install
+
+### Using an IDE
+
+If you prefer to use an IDE then you can auto-generate the IDE's project
+files using maven plugins. e.g.
+
+    mvn eclipse:eclipse
+  
+or
+
+    mvn idea:idea
+
+### Importing into Eclipse
+
+If you have not already done so, you will need to make Eclipse aware of
+the Maven repository so that it can build everything. In the preferences,
+go to `Java -> Build Path -> Classpath` and define a new Classpath
+Variable named `M2_REPO` that points to your local Maven repository. i.e.
+`~/.m2/repository` on Unix and `c:\Documents and Settings\$username\.m2\repository` 
+on Windows).
+
+You can also get Maven to do this for you:
+
+    mvn eclipse:add-maven-repo -Declipse.workspace=/path/to/the/workspace/ 
+
+### See Also
+
+* [Source](/source.html)
+* [Developer Links](developers.html)

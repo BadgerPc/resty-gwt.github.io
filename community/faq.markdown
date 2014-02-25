@@ -20,12 +20,12 @@ See the [support guide](support.html) for more details.
 
 ### How do I build Scalate?
 
-First [get the source](/source.html) then see the [building guide](/building.html)
+First [get the source](/source.html) then see the [building guide](building.html)
 
 ### Why does the Maven build not download jars?
 
 The default profile in maven does not include remote repos, so make sure
-you add the download profile when building for the first time. First [get the source](/source.html) then see the [building guide](/building.html).<br/><br/>
+you add the download profile when building for the first time. First [get the source](/source.html) then see the [building guide](building.html).<br/><br/>
 
     mvn install -P download
 
