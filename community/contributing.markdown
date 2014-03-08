@@ -10,7 +10,7 @@ software - please do dive in and help!
 <br/><br/>
 
 
-Try surf the [documentation](../documentation/index.html) and website in
+Try surf the [documentation](/documentation/restygwt-user-guide.html) and website in
 general - if somethings confusing or not clear, [let us
 know](index.html) or raise a [support request](support.html).
 <br/><br/>

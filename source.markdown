@@ -27,7 +27,7 @@ you clone the repository using the Git URL:
     git clone {{site.github_page}}
     cd {{site.project_id}}
 
-Now you probably want to try [build the {{site.project_name}} code](building.html) 
+Now you probably want to try [build the {{site.project_name}} code](/community/building.html) 
 
 ## Contributing patches
 
@@ -67,6 +67,6 @@ lists.
 
 Once you have checked out the code try following 
 
-* [instructions to build {{site.project_name}}](building.html) 
-* read the [documentation](../documentation/index.html)
-* browse the [developer links and maven reports](developers.html)
+* [instructions to build {{site.project_name}}](/community/building.html) 
+* read the [documentation](/documentation/restygwt-user-guide.html)
+* browse the [developer links and maven reports](/community/developers.html)
