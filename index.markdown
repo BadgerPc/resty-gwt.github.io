@@ -28,7 +28,7 @@ Or if you are a maven user, then just add the following dependency to your `pom.
 <inherits name="org.fusesource.restygwt.RestyGWT"/>
 {% endhighlight %}
 
-<i class="fa fa-circle number"><span class="number">3</span><span class="text">Define your client interface</span></i>
+<i class="fa fa-circle number"><span class="number">3</span><span class="text">Define your REST client interface</span></i>
 <br/><br/>
 Use [JAX-RS](https://jax-rs-spec.java.net/) annotations to make it even simpler !
 <br/><br/>
