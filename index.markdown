@@ -1,8 +1,16 @@
 ---
-layout: default
+layout: index
 title: RestyGWT
-slogan : Making Restful Services Accessible to GWT Applications
 ---
+
+<div class="jumbotron">
+	<div class="logo">
+      <img src="/images/restygwt-logo.png" alt="RestyGWT logo">
+    </div>
+  <h1>Making Restful Services Accessible to GWT Applications</h1>
+
+</div>
+
 
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
