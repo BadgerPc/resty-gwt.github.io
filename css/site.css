@@ -17,17 +17,13 @@
  */
 
 body, html {
-    font-family:Arial,Verdana,Helvetica,sans-serif ;
+    font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #666666;
-}
-body, html, table, tr, td, tbody {
-    padding:0;
-    margin:0;
-    vertical-align: top;
+    position: static;
+    font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:Arial,Verdana,Helvetica,sans-serif ;
+h1, h2, h3, h4, h5, h6 {  
     font-weight: normal;
     line-height: normal;
     overflow: visible;
@@ -135,8 +131,8 @@ img {
 
 #content { width: 100%; float: left; padding-bottom: 20px; }
 #content .wrapper { 
-  min-width: 700px; 
-  width: 700px; 
+  min-width: 762px; 
+  width: 762px; 
   margin: 0 auto; 
   /*padding-top: 1em*/
 }
@@ -248,3 +244,21 @@ i.number span.text {
   top: -0.2em;
 }
 
+.fa span {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.major-links .fa.fa-github {
+  font-size: 2.4em;
+  color: black;
+  margin-right: 5px;
+  position: relative;
+  top: 6px;
+}
+
+.major-links img {
+  position: relative;
+  margin-left: 10px;
+  margin-right: 5px;
+  top: -3px;
+}

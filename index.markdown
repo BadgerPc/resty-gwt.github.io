@@ -8,9 +8,13 @@ title: RestyGWT
       <img src="/images/restygwt-logo.png" alt="RestyGWT logo">
     </div>
   <h1>Making Restful Services Accessible to GWT Applications</h1>
-
 </div>
 
+<div class="major-links">
+    <a href="{{site.github_page}}"><i class="fa fa-github"></i><span >Fork RestyGWT !</span></a>
+    <a href="http://groups.google.com/group/restygwt"><img src="/images/my-groups-color.png" width="50px"/>RestyGWT discussion group</a>
+  </div>
+<br/><br/>
 
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
