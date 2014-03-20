@@ -36,7 +36,6 @@ Or if you are a maven user, then just add the following dependency to your `pom.
 <i class="fa fa-circle number"><span class="number">2</span><span class="text">Add RestyGWT to you GWT module file</span></i>
 <br/><br/>
 {% highlight xml %}
-<inherits name="com.google.gwt.json.JSON"/>
 <inherits name="org.fusesource.restygwt.RestyGWT"/>
 {% endhighlight %}
 
