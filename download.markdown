@@ -20,8 +20,6 @@ Download latest stable version
 <br/>
 <br/>
 Previous versions
-<br/>
-<br/>
 
 {% for version in site.project_versions  %}
 
