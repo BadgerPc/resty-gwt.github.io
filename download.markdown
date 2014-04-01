@@ -12,6 +12,12 @@ in the [{{site.name}} area]({{site.release_base}}).
 <br/>
 Download:
 
+Download latest stable version
+
+[{{site.project_name}}-{{site.project_version}}.jar]({{site.release_base}}/{{version}}/{{site.project_name}}-{{site.project_version}}.jar)
+
+Previous versions
+
 {% for version in site.project_versions  %}
 
 - [{{site.project_name}}-{{version}}.jar]({{site.release_base}}/{{version}}/{{site.project_name}}-{{version}}.jar)
