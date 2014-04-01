@@ -17,9 +17,10 @@ Download latest stable version
 
 [{{site.project_name}}-{{site.project_version}}.jar]({{site.release_base}}/{{site.project_version}}/{{site.project_name}}-{{site.project_version}}.jar)
 
-<br/>
-<br/>
+
 Previous versions
+<br/>
+<br/>
 
 {% for version in site.project_versions  %}
 
