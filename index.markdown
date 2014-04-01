@@ -19,6 +19,7 @@ title: RestyGWT
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
 Download the latest stable RestyGWT jar
+<br/>
 
 - [{{site.project_name}}-{{site.project_version}}.jar]({{site.release_base}}/{{site.project_version}}/{{site.project_name}}-{{site.project_version}}.jar)
 
