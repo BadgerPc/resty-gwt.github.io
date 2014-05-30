@@ -667,7 +667,7 @@ and then implement `AnimalRestyTypeIdResolver` as follows:
 
 <br/>
 {% highlight java %}
-public class AnimalRestyTypeIdResolver extends extends RestyJsonTypeIdResolver
+public class AnimalRestyTypeIdResolver implements RestyJsonTypeIdResolver
 {
     @Override
     public Class<? extends TypeIdResolver> getTypeIdResolverClass()
