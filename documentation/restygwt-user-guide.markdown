@@ -301,6 +301,18 @@ In case you need to parse the JSON from a `String` use
 JSONValue json = JSONParser.parseStrict( jsonString );
 {% endhighlight %}
 
+### Date Format
+
+the default date format is `yyyy-MM-dd'T'HH:mm:ss.SSSZ`
+and can be set in the `Defaults` class
+
+<br/>
+{% highlight java %}
+Defaults.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+{% endhighlight %}
+
+when setting it to `null` then unix time will be used.
+
 ### Customizing the JSON Property Names
 
 If you want to map a field name to a different JSON property name, you
