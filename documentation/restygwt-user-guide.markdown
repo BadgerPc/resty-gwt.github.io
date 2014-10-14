@@ -193,6 +193,13 @@ public void order(
     MethodCallback<OrderConfirmation> callback);
 {% endhighlight %}
 
+### Configuring service root URLs
+
+There are two ways to configure service root URLs which are appended with the `@Path` annotation property
+when building the final service URL. For single service root URL the `Defaults.setServiceRoot(String)` method can be used. When several services with different service roots are used the `@Options` annotation is equipped with
+the `serviceRootKey` property which can be set to read service root entries provided with the static
+`ServiceRoots.add(String, String)` method.
+
 ### Configuring the Expected HTTP Status Code
 
 By default results that have a 200, 201, or 204 HTTP status code are considered
