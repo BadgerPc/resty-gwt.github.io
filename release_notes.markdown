@@ -4,6 +4,30 @@ title: RestyGWT / Release Notes
 slogan: Enjoy it!
 ---
 
+## Version 2.0
+
+	* create ExceptionMapper class to allow the application to customize how the exceptions are created
+	* Update Jackson annotations to version 2.4
+	* Use default timeout only if it was not already set through the @Options(timeout =) annotation.
+	* Add support for JacksonAnnotationsInside.
+	* Allow abstract methods in Enums
+
+## Version 1.5
+
+	* allow to use base64 byte arrays if configured in Defaults
+	* do not url-escape path-params which are already a complete url
+	* add support for @JsonValue on enums
+	* service root urls can now be set for several services with the ServiceRoots class
+	* Enums in @FormParams should not be enclosed in quotes
+	* Handling QueryListTypes in Forms
+	* handle Collections as Lists in QueryParams and in FormParms
+	* Allow collections as keys in maps
+	* handle Collections as Lists in QueryParams and in FormParams
+	* List, Set, and OrderedSet in form should be handled as per jax-rs standard
+	* add collection support for interfaces
+	* add Dispatcher to subresource
+	* Maps: Don't decode key if map key type is String
+	
 ## Version 1.4
 
     * fix generated enum serializer with @JsonSubTypes.
