@@ -244,6 +244,14 @@ i.number span.text {
   top: -0.2em;
 }
 
+
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
 .fa span {
   font-family: proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -261,4 +269,9 @@ i.number span.text {
   margin-left: 10px;
   margin-right: 5px;
   top: -3px;
+}
+
+.fa.fa-youtube.red {
+    color: red;
+    font-size: 2rem;
 }

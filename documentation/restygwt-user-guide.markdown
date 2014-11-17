@@ -193,6 +193,13 @@ public void order(
     MethodCallback<OrderConfirmation> callback);
 {% endhighlight %}
 
+### Configuring service root URLs
+
+There are two ways to configure service root URLs which are appended with the `@Path` annotation property
+when building the final service URL. For single service root URL the `Defaults.setServiceRoot(String)` method can be used. When several services with different service roots are used the `@Options` annotation is equipped with
+the `serviceRootKey` property which can be set to read service root entries provided with the static
+`ServiceRoots.add(String, String)` method.
+
 ### Configuring the Expected HTTP Status Code
 
 By default results that have a 200, 201, or 204 HTTP status code are considered
@@ -300,6 +307,18 @@ In case you need to parse the JSON from a `String` use
 {% highlight java %}
 JSONValue json = JSONParser.parseStrict( jsonString );
 {% endhighlight %}
+
+### Date Format
+
+the default date format is `yyyy-MM-dd'T'HH:mm:ss.SSSZ`
+and can be set in the `Defaults` class
+
+<br/>
+{% highlight java %}
+Defaults.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+{% endhighlight %}
+
+when setting it to `null` then unix time will be used.
 
 ### Customizing the JSON Property Names
 
@@ -667,7 +686,7 @@ and then implement `AnimalRestyTypeIdResolver` as follows:
 
 <br/>
 {% highlight java %}
-public class AnimalRestyTypeIdResolver extends extends RestyJsonTypeIdResolver
+public class AnimalRestyTypeIdResolver implements RestyJsonTypeIdResolver
 {
     @Override
     public Class<? extends TypeIdResolver> getTypeIdResolverClass()

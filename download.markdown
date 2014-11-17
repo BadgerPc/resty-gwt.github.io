@@ -10,7 +10,19 @@ You can download {{site.name}} from the [Maven Repository](http://repo.fusesourc
 in the [{{site.name}} area]({{site.release_base}}).
 <br/>
 <br/>
-Download:
+
+Download latest stable version
+<br/>
+<br/>
+
+[{{site.project_name}}-{{site.project_version}}.jar]({{site.release_base}}/{{site.project_version}}/{{site.project_name}}-{{site.project_version}}.jar)
+
+<br/>
+<br/>
+
+Previous versions
+<br/>
+<br/>
 
 {% for version in site.project_versions  %}
 
@@ -20,9 +32,12 @@ Download:
 
 ## Snapshots
 
-Want to help stablize the latest and greatest nightly development build? **Warnning**: This build may be extremely bleeding edge!  
+Want to help stablize the latest and greatest nightly development build? **Warnning**: This build may be extremely bleeding edge!  <br/>
 
-- [{{site.project_name}}-{{site.project_snapshot_version}}.jar](http://repo.fusesource.com/nexus/service/local/artifact/maven/redirect?r=snapshots&g=org.fusesource.{{site.project_name}}&a={{site.project_name}}&v={{site.project_snapshot_version}}&e=jar)
+<!--
+- [{{site.project_name}}-{{site.project_snapshot_version}}.jar](http://repo.fusesource.com/nexus/service/local/artifact/maven/redirect?r=snapshots&g=org.fusesource.{{site.project_name}}&a={{site.project_name}}&v={{site.project_snapshot_version}}&e=jar)-->
+
+1.5-SNAPSHOT
 
 ## As a Maven Dependency 
 

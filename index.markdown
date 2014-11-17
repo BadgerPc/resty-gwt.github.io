@@ -18,7 +18,8 @@ title: RestyGWT
 
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
-Download the latest RestyGWT jar
+Download the latest stable RestyGWT jar
+<br/><br/>
 
 - [{{site.project_name}}-{{site.project_version}}.jar]({{site.release_base}}/{{site.project_version}}/{{site.project_name}}-{{site.project_version}}.jar)
 
@@ -56,9 +57,20 @@ public interface PizzaService extends RestService {
 <br/><br/>
 {% highlight java %}
 PizzaService service = GWT.create(PizzaService.class);
-service.order(order, callback);
+service.order(order, new MethodCallback<OrderConfirmation>() {
+    
+    public void onSuccess(Method method, OrderConfirmation response) {
+      //code your stuff here
+    }
+    
+    public void onFailure(Method method, Throwable exception) {
+      //code your stuff here
+    });
 {% endhighlight %}
 
+## A quick video to introduce RestyGWT
+
+<iframe class="center" width="480" height="360" src="//www.youtube.com/embed/9o0J3yWbTKY" frameborder="0" allowfullscreen></iframe>
 
 <br/><br/>
 Want to know more ? Checkout the [documentation](/documentation/restygwt-user-guide.html) or [restygwt google group](http://groups.google.com/group/restygwt)
