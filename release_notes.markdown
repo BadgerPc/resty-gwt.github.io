@@ -6,7 +6,7 @@ slogan: Enjoy it!
 
 ## Version 2.0.1
 
-	* JavaSourceCategory is no longer public
+	* fixes problem with JavaSourceCategory no longer being public in GWT-2.7.0
 	* Generated Code fix: The "next" method must have only one return statement.
 	* JsonTypeInfo and JsonSubTypes annotations must not be searched on current class only. Theses annotations must be searched on the current class, on all parent classes and interfaces.
 	* Allow specifying timezone for date/time string conversions
