@@ -4,6 +4,16 @@ title: RestyGWT / Release Notes
 slogan: Enjoy it!
 ---
 
+## Version 2.0.1
+
+	* JavaSourceCategory is no longer public
+	* Generated Code fix: The "next" method must have only one return statement.
+	* JsonTypeInfo and JsonSubTypes annotations must not be searched on current class only. Theses annotations must be searched on the current class, on all parent classes and interfaces.
+	* Allow specifying timezone for date/time string conversions
+	* fixing issue with IE sending "undefined" in the body of POST, PUT or DELETE request if no data is set to the request
+	* in ServiceRoots: urls ending with slashes are properly handled now
+	* add XMLTransient as as supported annotation to ignore fields and methods
+
 ## Version 2.0
 
 	* create ExceptionMapper class to allow the application to customize how the exceptions are created
