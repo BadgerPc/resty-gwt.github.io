@@ -17,9 +17,10 @@ title: RestyGWT
 <br/><br/>
 
 <img src="/images/gwt-create-logo.svg"/><br/>
-Full room for RestyGwt presentation by David Chandler @GwtCreate2015!
+Full room for RestyGwt + Jerseyvpresentation by David Chandler @GwtCreate 2015, amazing !</br>
 
 <img width="400px" src="/images/gwtcreate1.jpg"/><img width="400px" src="/images/gwtcreate2.jpg"/>
+</br>
 
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
