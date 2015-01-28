@@ -17,7 +17,7 @@ title: RestyGWT
 <br/><br/>
 
 <img src="/images/gwt-create-logo.svg"/><br/><br/>
-Full room for RestyGwt + Jerseyvpresentation by David Chandler @GwtCreate 2015, amazing !</br><br/>
+Full room for RestyGwt + Jersey presentation by David Chandler @GwtCreate 2015, amazing !</br><br/>
 
 <img width="330px" src="/images/gwtcreate1.jpg"/><img width="330px" src="/images/gwtcreate2.jpg"/>
 </br><br/>
