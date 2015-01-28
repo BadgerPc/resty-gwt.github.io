@@ -16,11 +16,11 @@ title: RestyGWT
   </div>
 <br/><br/>
 
-<img src="/images/gwt-create-logo.svg"/><br/>
-Full room for RestyGwt + Jerseyvpresentation by David Chandler @GwtCreate 2015, amazing !</br>
+<img src="/images/gwt-create-logo.svg"/><br/><br/>
+Full room for RestyGwt + Jerseyvpresentation by David Chandler @GwtCreate 2015, amazing !</br><br/>
 
 <img width="400px" src="/images/gwtcreate1.jpg"/><img width="400px" src="/images/gwtcreate2.jpg"/>
-</br>
+</br><br/>
 
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
