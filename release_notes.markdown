@@ -3,6 +3,10 @@ layout: default
 title: RestyGWT / Release Notes
 slogan: Enjoy it!
 ---
+## Version 2.0.2
+
+    * Fix GWT 2.7 incremental super dev mode when using RestyJsonTypeIdResolve
+	* Add support for JacksonAnnotationInside
 
 ## Version 2.0.1
 
