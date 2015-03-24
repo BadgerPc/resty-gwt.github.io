@@ -32,12 +32,17 @@ Previous versions
 
 ## Snapshots
 
-Want to help stablize the latest and greatest nightly development build? **Warnning**: This build may be extremely bleeding edge!  <br/>
-
-<!--
-- [{{site.project_name}}-{{site.project_snapshot_version}}.jar](http://repo.fusesource.com/nexus/service/local/artifact/maven/redirect?r=snapshots&g=org.fusesource.{{site.project_name}}&a={{site.project_name}}&v={{site.project_snapshot_version}}&e=jar)-->
-
-1.5-SNAPSHOT
+Want to help stablize the latest and greatest nightly development build? **Warnning**: This build may be extremely bleeding edge!
+<br/>
+<br/>
+Latest version : 
+{{site.project_snapshot_version:}}
+<br/>
+<br/>
+Snapshots can be found here :
+<br/>
+<br/>
+[https://repository.jboss.org/nexus/content/repositories/fs-snapshots/org/fusesource/restygwt/restygwt/](https://repository.jboss.org/nexus/content/repositories/fs-snapshots/org/fusesource/restygwt/restygwt/)
 
 ## As a Maven Dependency 
 
@@ -58,7 +63,7 @@ also add the following snapshot repository to your pom:
 <repository>
     <id>fusesource-snapshots</id>
     <name>Fusesource Snapshots</name>
-    <url>http://repo.fusesource.com/nexus/content/repositories/snapshots</url>
+    <url>https://repository.jboss.org/nexus/content/repositories/fs-snapshots</url>
     <snapshots><enabled>true</enabled></snapshots>
     <releases><enabled>false</enabled></releases>
 </repository>
