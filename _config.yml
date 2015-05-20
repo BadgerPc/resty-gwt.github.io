@@ -4,9 +4,9 @@ pygments: true
 release_base: http://search.maven.org/remotecontent?filepath=org/fusesource/restygwt/restygwt
 project_name: restygwt
 project_id: resty-gwt
-project_snapshot_version: 2.0.3-SNAPSHOT
-project_version: 2.0.2
-project_versions: [1.0,1.1,1.2,1.3,1.3.1,1.4,1.5,2.0,2.0.1,2.0.2]
+project_snapshot_version: 2.0.4-SNAPSHOT
+
+project_versions: [1.0,1.1,1.2,1.3,1.3.1,1.4,1.5,2.0,2.0.1,2.0.2,2.0.3]
 git_user_url: git://github.com/chirino/resty-gwt.git
 github_page: https://github.com/resty-gwt/
 issue_tracker: https://github.com/resty-gwt/resty-gwt/issues

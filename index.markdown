@@ -2,7 +2,7 @@
 layout: index
 title: RestyGWT
 ---
-
+{% assign project_version = site.project_versions.last %}
 <div class="jumbotron">
 	<div class="logo">
       <img src="/images/restygwt-logo.png" alt="RestyGWT logo">
@@ -17,17 +17,17 @@ title: RestyGWT
 <br/><br/>
 
 <img src="/images/gwt-create-logo.svg"/><br/><br/>
-Full room for RestyGwt + Jersey presentation by David Chandler @GwtCreate 2015, amazing !</br><br/>
+Full room for RestyGwt + Jersey presentation by David Chandler @GwtCreate 2015, amazing !<br/><br/>
 
 <img width="330px" src="/images/gwtcreate1.jpg"/><img width="330px" src="/images/gwtcreate2.jpg"/>
-</br><br/>
+<br/><br/>
 
 <i class="fa fa-circle number"><span class="number">1</span><span class="text">Add RestyGWT to your classpath</span></i>
 <br/><br/>
 Download the latest stable RestyGWT jar
 <br/><br/>
 
-- [{{site.project_name}}-{{site.project_version}}.jar]({{site.release_base}}/{{site.project_version}}/{{site.project_name}}-{{site.project_version}}.jar)
+- [{{site.project_name}}-{{project_version}}.jar]({{site.release_base}}/{{project_version}}/{{site.project_name}}-{{project_version}}.jar)
 
 Or if you are a maven user, then just add the following dependency to your `pom.xml`.
 <br/><br/>
@@ -36,7 +36,7 @@ Or if you are a maven user, then just add the following dependency to your `pom.
 <dependency>
     <groupId>org.fusesource.{{site.project_name}}</groupId>
     <artifactId>{{site.project_name}}</artifactId>
-    <version>{{site.project_version}}</version>
+    <version>{{project_version}}</version>
 </dependency>
 {% endhighlight %}
 
