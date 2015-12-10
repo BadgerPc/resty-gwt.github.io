@@ -3,6 +3,34 @@ layout: default
 title: RestyGWT / Release Notes
 slogan: Enjoy it!
 ---
+
+## Version 2.1.1
+
+    * fixed regressions around JsonTypeIdResolver which got introduced
+      with version 2.1.0
+
+## Version 2.1.0
+
+	* remove the copied jackson sources and use source artifacts via
+    maven
+	* better handling of null object in serialization
+	* treat all enum values of JsonTypeInfo.As and warn on not
+    implemented ones.
+	* Modified AbstractRequestCallback response text logging from FINE
+    to FINEST
+	* Fix deserialization for boolean fields.
+	* Created FailedResponseException which contains the Response
+    instance
+	* Add autodetection of Json/text for @Consumes annotation.
+	* Add autodetection of text for @Produces annotation
+	* Add property to enable autodetection of Json/text using @Consumes and @Produces annotation
+	* Fix for Jersey: Json array with 1 element is serialized as
+    object
+	* To turn off the header 'X-HTTP-Method-Override' I added the
+    attribute 'addXHttpMethodOverrideHeader' to the Defaults class.
+	* better handling of JsonIgnore annotation
+	* improved JsonTypeIdResolver for concrete leaf types
+
 ## Version 2.0.2
 
     * Fix GWT 2.7 incremental super dev mode when using RestyJsonTypeIdResolve
