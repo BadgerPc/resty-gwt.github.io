@@ -1,6 +1,4 @@
 name: RestyGWT
-markdown: redcarpet
-pygments: true
 release_base: http://search.maven.org/remotecontent?filepath=org/fusesource/restygwt/restygwt
 project_name: restygwt
 project_id: resty-gwt
