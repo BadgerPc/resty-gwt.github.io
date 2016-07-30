@@ -375,11 +375,34 @@ public class Credentials {
 {% endhighlight %}
 
 Note that all the parameters of an annotated constructor should be annotated with the `@JsonProperty`.
-As long as each property name matches the declared field names, the order can be freely chosen.
+As long as each property name matches the declared field names, the
+order can be freely chosen.
+
+### Using gwt-jackson for JSON serialization and deserialization
+
+**NOTE**: the gwt-jackson integration is still *experimental*, so
+  please give it trial and report bugs to resty-gwt and/or gwt-jackson as in the long run gwt-jackson will the default.
+  <br/><br/>
+
+Add following to your GWT module XML file:
+
+<br/>
+{% highlight xml %}
+
+    <inherits name="com.github.nmorel.gwtjackson.GwtJackson" />
+
+    <set-property name="restygwt.encodeDecode.useGwtJackson" value="true" />
+
+{% endhighlight %}
+
+See also
+[jackson support](https://github.com/nmorel/gwt-jackson/wiki/Jackson-annotations-support)
+of gwt-jackson.
 
 ### Custom Serializer Generators
 
 RestyGWT allows you to add another encode/decoder-generator which is used with certain classes. There are three simple steps for enabling fully customized serializer generation:
+
 * Extend [`org.fusesource.restygwt.rebind.JsonEncoderDecoderClassCreator`](https://github.com/cponomaryov/resty-gwt/blob/master/restygwt/src/main/java/org/fusesource/restygwt/rebind/JsonEncoderDecoderClassCreator.java) to create an external serializer generator that can be registered to handle values of certain types. You should override the `generate()` method. Example: [`org.fusesource.restygwt.server.complex.OptionalSerializerGenerator`](https://github.com/cponomaryov/resty-gwt/blob/master/restygwt/src/test/java/org/fusesource/restygwt/server/complex/OptionalSerializerGenerator.java).
 * Extend [`org.fusesource.restygwt.rebind.RestyJsonSerializerGenerator`](https://github.com/cponomaryov/resty-gwt/blob/master/restygwt/src/main/java/org/fusesource/restygwt/rebind/RestyJsonSerializerGenerator.java) and specify two things:
     * your custom serializer generator class created in the first step (`getGeneratorClass()` method)
@@ -404,24 +427,6 @@ for the whole generation processing of a particular type. To give RestyGWT users
 the flexibility to extend this generation process, you can register custom
 implementations of `org.fusesource.restygwt.rebind.AnnotationResolver`.
 
-### Using gwt-jackson for JSON serialization and deserialization
-
-NOTE: the gwt-jackson integration still experimental, so please try it and report bugs to resty-gwt and/or gwt-jackson as in the long run gwt-jackson will the default.
-
-add following to your GWT module XML file:
-
-<br/>
-{% highlight xml %}
-
-    <inherits name="com.github.nmorel.gwtjackson.GwtJackson" />
-
-    <set-property name="restygwt.encodeDecode.useGwtJackson" value="true" />
-
-{% endhighlight %}
-
-See also
-[jackson support](https://github.com/nmorel/gwt-jackson/wiki/Jackson-annotations-support)
-of gwt-jackson.
 
 ### Runtime Annotation Information
 
