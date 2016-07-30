@@ -1,0 +1,14 @@
+mvn release:prepare
+mvn release:perform
+
+# releasing the new snapshot to sonatype snapshots repo
+
+mvn deploy
+
+# fix versions in
+
+resty-gwt.github.io/_config.yml
+
+# changelog:
+
+resty-gwt.github.io/release-notes.markdown
