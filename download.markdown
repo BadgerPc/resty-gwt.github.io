@@ -6,8 +6,7 @@ slogan: Download it today!
 {% assign project_version = site.project_versions.last %}
 ## Download
 
-You can download {{site.name}} from the [Maven Repository](http://repo.fusesource.com/nexus/content/repositories/public/) 
-in the [{{site.name}} area]({{site.release_base}}).
+You can download {{site.name}} from the [{{site.name}} area]({{site.release_base}}) of Maven Central.
 <br/>
 <br/>
 
@@ -42,7 +41,7 @@ Latest version :
 Snapshots can be found here :
 <br/>
 <br/>
-[https://repository.jboss.org/nexus/content/repositories/fs-snapshots/org/fusesource/restygwt/restygwt/](https://repository.jboss.org/nexus/content/repositories/fs-snapshots/org/fusesource/restygwt/restygwt/)
+[https://oss.sonatype.org/content/repositories/snapshots](https://oss.sonatype.org/content/repositories/snapshots)
 
 ## As a Maven Dependency 
 
@@ -61,9 +60,9 @@ also add the following snapshot repository to your pom:
 
 {% highlight xml %}
 <repository>
-    <id>fusesource-snapshots</id>
-    <name>Fusesource Snapshots</name>
-    <url>https://repository.jboss.org/nexus/content/repositories/fs-snapshots</url>
+    <id>sonatype-snapshots</id>
+    <name>Sonatype Snapshots</name>
+    <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     <snapshots><enabled>true</enabled></snapshots>
     <releases><enabled>false</enabled></releases>
 </repository>
