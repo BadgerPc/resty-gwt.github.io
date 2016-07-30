@@ -404,6 +404,24 @@ for the whole generation processing of a particular type. To give RestyGWT users
 the flexibility to extend this generation process, you can register custom
 implementations of `org.fusesource.restygwt.rebind.AnnotationResolver`.
 
+### Using gwt-jackson for JSON serialization and deserialization
+
+NOTE: the gwt-jackson integration still experimental, so please try it and report bugs to resty-gwt and/or gwt-jackson as in the long run gwt-jackson will the default.
+
+add following to your GWT module XML file:
+
+<br/>
+{% highlight xml %}
+
+    <inherits name="com.github.nmorel.gwtjackson.GwtJackson" />
+
+    <set-property name="restygwt.encodeDecode.useGwtJackson" value="true" />
+
+{% endhighlight %}
+
+See also
+[jackson support](https://github.com/nmorel/gwt-jackson/wiki/Jackson-annotations-support)
+of gwt-jackson.
 
 ### Runtime Annotation Information
 
